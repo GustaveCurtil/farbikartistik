@@ -2,13 +2,43 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+:root {
+    --gap-small: 0.6rem;
+    --gap-big: 1.2rem;
 }
 
 body {
     width: 100vw;
     height: 100svh;
+    overflow-x: hidden;
+    padding: var(--gap-small);
+}
+
+header {
+    margin-bottom: var(--gap-big);
 }
 
 img {
     width: 100%;
+}
+
+li {list-style: none;}
+
+li li {
+    list-style-position: inside;
+    padding-left: 1rem;
+}
+
+#fiche {
+    padding: var(--gap-small);
+    width: 100%;
+    background-color: wheat;
+    border: 1px solid black;
+}
+
+section:not(:last-of-type) {
+    margin-bottom: var(--gap-big) ;
 }
