@@ -6,15 +6,21 @@
 }
 
 :root {
+    --gap-mini: 0.2rem;
     --gap-small: 0.6rem;
     --gap-big: 1.2rem;
+    --height-course: 5.4rem;
+    --color-pink: rgb(218, 95, 116);
 }
+
+a {color: var(--color-pink);}
 
 body {
     width: 100vw;
     height: 100svh;
     overflow-x: hidden;
     padding: var(--gap-small);
+    background-color: rgb(250, 250, 250);
 }
 
 header {
@@ -35,10 +41,42 @@ li li {
 #fiche {
     padding: var(--gap-small);
     width: 100%;
-    background-color: wheat;
+    background-color: hsl(44, 97%, 86%);
     border: 1px solid black;
 }
 
 section:not(:last-of-type) {
     margin-bottom: var(--gap-big) ;
+}
+
+#lessen {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--gap-small);
+
+}
+
+#lessen a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    width: 100%;
+    height: var(--height-course);
+    background-color: var(--color-pink);
+}
+
+
+#lessen a>div:first-of-type {
+    height: 100%;
+    width: calc((6/5) * var(--height-course));
+}
+
+#lessen a>div:last-of-type {
+    padding: var(--gap-mini);
+}
+
+#lessen img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
