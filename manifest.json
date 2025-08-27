@@ -3,6 +3,6 @@
   "short_name": "FA",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#317EFB"
+  "background_color": "rgb(218, 95, 116)",
+  "theme_color": "rgb(250, 250, 250)"
 }
