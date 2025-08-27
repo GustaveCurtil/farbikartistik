@@ -53,7 +53,29 @@ section:not(:last-of-type) {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: var(--gap-small);
+    position: relative;
 
+}
+
+#lessen>details {
+    top: var(--gap-small);
+    background-color: white;
+    border: 1px solid black;
+    
+}
+
+summary {
+    padding: var(--gap-mini);
+}
+
+#filters>div {
+    display: flex;
+    justify-content: space-between;
+        padding: var(--gap-mini);
+}
+
+#filters>div {
+    border-top: 1px solid black;
 }
 
 #lessen a {
@@ -63,6 +85,10 @@ section:not(:last-of-type) {
     width: 100%;
     height: var(--height-course);
     background-color: var(--color-pink);
+}
+
+#lessen>:nth-child(2n + 3){
+    background-color: rgb(107, 102, 205);
 }
 
 
