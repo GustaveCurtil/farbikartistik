@@ -13,8 +13,8 @@
     --height-course: 5.4rem;
     --height-header: 2.4rem;
     --height-nav: 2.4rem;
-    --color-pink: rgb(215, 60, 86);
-    --color-white: rgb(250, 250, 250);
+    --color-pink: #d73c56;
+    --color-white: #fafafa;
     --color-beige: hsl(44, 97%, 86%);
     --color-black: rgb(33, 33, 33);
 }

@@ -3,6 +3,6 @@
   "short_name": "Fabrik Artistik",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "rgb(250, 250, 250)",
-  "theme_color": "rgb(218, 95, 116)"
+  "background_color": "#fafafa",
+  "theme_color": "#d73c56"
 }
