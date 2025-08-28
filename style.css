@@ -147,11 +147,11 @@ summary {
 }
 
 #lessen>div>:nth-child(2n + 3){
-    background-color: rgb(107, 102, 205);
+    background-color: rgba(107, 102, 205, 0.214);
 }
 
 #lessen>div>:nth-child(3n){
-    background-color: rgb(186, 205, 102);
+    background-color: rgba(186, 205, 102, 0.301);
 }
 
 
