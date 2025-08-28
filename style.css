@@ -91,7 +91,8 @@ li li {
     width: 100%;
     background-color: var(--color-beige);
     border: 1px solid black;
-    background-image: url(/media/zijde.jpg);
+    box-shadow: 1px 1px 0px 1px #000000;
+    /* background-image: url(/media/zijde.jpg); */
 }
 
 section:not(:last-of-type) {
