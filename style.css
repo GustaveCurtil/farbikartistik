@@ -27,21 +27,21 @@ body {
     overflow: hidden;
     background-color: var(--color-white);
     color: var(--color-black);
-    background-image: url(grid.JPG);
+    background-image: url(/media/grid.JPG);
 }
 
 header {
     height: var(--height-header) ;
     border-bottom: 4px solid var(--color-pink);
     padding: 0 var(--gap-small);
-    background-color: var(--color-pink);
+    background-color: var(--color-white);
     border-bottom: 1px solid var(--color-black);
-    background-image: url(/fabrik.jpg);
+    /* background-image: url(/media/fabrik.jpg); */
 }
 h1 {
     text-align: center;
 }
-h1 a {text-decoration: none; color: var(--color-white);}
+h1 a {text-decoration: none; -webkit-text-stroke: 1px black;}
 
 h1 a>span {display: inline-block;
 }
@@ -81,7 +81,7 @@ li li {
     width: 100%;
     background-color: var(--color-beige);
     border: 1px solid black;
-    background-image: url(zijde.jpg);
+    background-image: url(/media/zijde.jpg);
 }
 
 section:not(:last-of-type) {

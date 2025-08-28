@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="rgb(218, 95, 116)">
+    <script src="js/letter-transformation.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <title>Fabrik Artistik</title>
 </head>
@@ -81,7 +82,7 @@
             </details>
             <div>
                 <a href="/les.html">
-                    <div><img src="les4.png" alt=""></div>
+                    <div><img src="/media/les4.png" alt=""></div>
                     <div>
                         <h4>Les met een naam</h4>
                         <p>Tijd: 1uur</p>
@@ -90,7 +91,7 @@
                     </div>
                 </a>
                 <a href="/les.html">
-                    <div><img src="les.png" alt=""></div>
+                    <div><img src="/media/les.png" alt=""></div>
                     <div>
                         <h4>Les met een naam</h4>
                         <p>Tijd: 1uur</p>
@@ -99,7 +100,7 @@
                     </div>
                 </a>
                 <a href="/les.html">
-                    <div><img src="les2.png" alt=""></div>
+                    <div><img src="/media/les2.png" alt=""></div>
                     <div>
                         <h4>Les met een naam</h4>
                         <p>Tijd: 1uur</p>
@@ -108,7 +109,7 @@
                     </div>
                 </a>
                 <a href="/les.html">
-                    <div><img src="les3.png" alt=""></div>
+                    <div><img src="/media/les3.png" alt=""></div>
                     <div>
                         <h4>Les met een naam</h4>
                         <p>Tijd: 1uur</p>
@@ -117,7 +118,7 @@
                     </div>
                 </a>
                 <a href="/les.html">
-                    <div><img src="les4.png" alt=""></div>
+                    <div><img src="/media/les4.png" alt=""></div>
                     <div>
                         <h4>Les met een naam</h4>
                         <p>Tijd: 1uur</p>
@@ -126,7 +127,7 @@
                     </div>
                 </a>
                 <a href="/les.html">
-                    <div><img src="les5.png" alt=""></div>
+                    <div><img src="/media/les5.png" alt=""></div>
                     <div>
                         <h4>Les met een naam</h4>
                         <p>Tijd: 1uur</p>
@@ -135,7 +136,7 @@
                     </div>
                 </a>
                 <a href="/les.html">
-                    <div><img src="les.png" alt=""></div>
+                    <div><img src="/media/les.png" alt=""></div>
                     <div>
                         <h4>Les met een naam</h4>
                         <p>Tijd: 1uur</p>
@@ -144,7 +145,7 @@
                     </div>
                 </a>
                 <a href="/les.html">
-                    <div><img src="les3.png" alt=""></div>
+                    <div><img src="/media/les3.png" alt=""></div>
                     <div>
                         <h4>Les met een naam</h4>
                         <p>Tijd: 1uur</p>
@@ -153,7 +154,7 @@
                     </div>
                 </a>
                 <a href="/les.html">
-                    <div><img src="les2.png" alt=""></div>
+                    <div><img src="/media/les2.png" alt=""></div>
                     <div>
                         <h4>Les met een naam</h4>
                         <p>Tijd: 1uur</p>
@@ -162,7 +163,7 @@
                     </div>
                 </a>
                 <a href="/les.html">
-                    <div><img src="les5.png" alt=""></div>
+                    <div><img src="/media/les5.png" alt=""></div>
                     <div>
                         <h4>Les met een naam</h4>
                         <p>Tijd: 1uur</p>
@@ -189,14 +190,5 @@
     .then(() => console.log("Service Worker registered"));
 }
 
-  document.querySelectorAll("h1 a > span").forEach(span => {
-    const start = (Math.random() * 40 - 20).toFixed(1) + "deg"; // -20 to 20
-    const end   = (Math.random() * 40 - 20).toFixed(1) + "deg"; // another random angle
-    const duration = (Math.random() * 3 + 2).toFixed(1) + "s"; // 2s – 5s
-
-    span.style.setProperty("--start-angle", start);
-    span.style.setProperty("--end-angle", end);
-    span.style.animation = `wobble ${duration} ease-in-out infinite alternate`;
-  });
 </script>
 </html>
