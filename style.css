@@ -138,8 +138,10 @@ summary {
     text-decoration: none;
     color: black;
     display: flex;
+    flex-direction: column;
     width: 100%;
-    height: var(--height-course);
+    /* height: var(--height-course); */
+    height: 18rem;
     background-color: var(--color-pink);
 }
 
@@ -152,9 +154,18 @@ summary {
 }
 
 
-#lessen>div>a>div:first-of-type {
+/* #lessen>div>a>div:first-of-type {
     height: 100%;
     width: calc((6/5) * var(--height-course));
+}
+
+#lessen>div>a>div:last-of-type {
+    padding: var(--gap-mini);
+} */
+
+#lessen>div>a>div:first-of-type {
+    width: 100%;
+    height: calc((2/3) * 18rem);
 }
 
 #lessen>div>a>div:last-of-type {
