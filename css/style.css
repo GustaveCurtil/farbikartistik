@@ -12,11 +12,12 @@
     --height-course: 5.4rem;
     --height-header: 2.4rem;
     --height-nav: 2.4rem;
+    --height-filters: 1.6rem;
     --color-pink: #d73c56;
     --color-white: #fafafa;
     --color-beige: hsl(44, 97%, 86%);
     --color-black: rgb(33, 33, 33);
-    --color-blue: rgb(71, 114, 232);
+    --color-blue: #d73c56;
 }
 
 a {color: var(--color-pink);}
