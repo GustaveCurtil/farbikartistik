@@ -89,6 +89,7 @@ nav {
     background-color: var(--color-white);
     border-top: 1px solid var(--color-black);
     font-weight: 600;
+    
 }
 
 .desktop {display: none;}

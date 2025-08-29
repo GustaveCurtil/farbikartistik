@@ -3,7 +3,7 @@ const filters = document.querySelectorAll("#filters div");
 document.addEventListener("click", (e) => {
   const clickX = e.clientX;
   const clickY = e.clientY;
-    const rem = 10;
+    const rem = 14;
 
   let closestFilter = null;
   let closestDist = Infinity;
