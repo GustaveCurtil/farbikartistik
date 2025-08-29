@@ -1,5 +1,10 @@
+main {
+    padding-bottom: 0;
+}
+
 #lessen {
     position: relative;
+    margin-bottom: var(--gap-small);
 }
 
 #lessen>div {
@@ -10,28 +15,32 @@
 
 }
 
-#lessen>details {
+#lessen>#filters {
     position: sticky;
-    top: 0;
-    background-color: white;
-    border: 1px solid black;
-    margin-bottom: var(--gap-small);
+    bottom: var(--gap-small);
+    margin-top: var(--gap-small);
     z-index: 10;
+    display: grid;
+    gap: var(--gap-small);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     
 }
 
-summary {
-    padding: var(--gap-mini);
-}
-
 #filters>div {
+    border: 1px solid black;
     display: flex;
-    justify-content: space-between;
-    padding: var(--gap-mini);
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+        background-color: white;
+    box-shadow: 0px 0px var(--gap-small) calc(var(--gap-small) / 2) var(--color-white);
 }
 
-#filters>div {
-    border-top: 1px solid black;
+#filters>div.actief {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    box-shadow: 0px 0px var(--gap-small) calc(var(--gap-small) / 2) var(--color-blue);
+    z-index: 20;
 }
 
 #lessen div a {
@@ -45,11 +54,11 @@ summary {
     box-shadow: 1px 2px 2px 2px rgba(140, 38, 38, 0.491);
 }
 
-#lessen>div>:nth-child(2n + 3){
+#lessen>div:first-of-type>:nth-child(2n + 3){
     background-color: rgba(107, 102, 205, 0.214);
 }
 
-#lessen>div>:nth-child(3n){
+#lessen>div:first-of-type>:nth-child(3n){
     background-color: rgba(186, 205, 102, 0.301);
 }
 
@@ -76,4 +85,10 @@ summary {
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+@media screen and (min-width: 884px) {
+    #lessen>#filters {
+        gap: var(--gap-big);
+    }
 }

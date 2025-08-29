@@ -16,6 +16,7 @@
     --color-white: #fafafa;
     --color-beige: hsl(44, 97%, 86%);
     --color-black: rgb(33, 33, 33);
+    --color-blue: rgb(71, 114, 232);
 }
 
 a {color: var(--color-pink);}
@@ -96,7 +97,7 @@ nav {
 
     main {
         flex-grow: 1;
-        height: 100svh;
+        height: calc(100svh - var(--height-header));
     }  
 
     nav {
@@ -106,7 +107,7 @@ nav {
         padding: var(--gap-small);
         border-top: 0;
         border-right: 1px solid black;
-        height: 100svh;
+        height: calc(100svh - var(--height-header));
         justify-content: left;
     }
 
